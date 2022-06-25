@@ -1,0 +1,174 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* header  */
+
+.header {
+  background-image: url(img/header_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 60px;
+  padding-left: 80px;
+  min-height: 713px;
+}
+
+.tel {
+  background: #fec52e;
+  border: 1px solid #ffc700;
+  border-radius: 9px;
+  padding: 17px 25px;
+}
+
+.tel a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  color: #000000;
+  margin-left: 10px;
+}
+
+.tel a:hover {
+  text-decoration: none;
+}
+
+.header__nav__ul li:first-child {
+  margin-left: 70px;
+}
+
+.header__nav__ul li a {
+  margin-left: 44px;
+
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.header__nav__ul li a:hover {
+  text-decoration: none;
+}
+
+.header__body h1 {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 44px;
+  align-items: center;
+
+  color: #000000;
+  margin-top: 76px;
+}
+
+.header__body h1 span {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 72px;
+  display: flex;
+  align-items: center;
+
+  color: #ffbe00;
+}
+
+.header__body h2 {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 250;
+  font-size: 57px;
+  line-height: 64px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.header__body h2 span {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 57px;
+  line-height: 112%;
+  align-items: center;
+
+  color: #000000;
+}
+
+.header__body p {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+
+  margin-top: 32px;
+}
+
+.header__body a {
+  display: inline-block;
+  background: #ffbe00;
+  border: 1px solid #ffc700;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  margin-top: 31px;
+  padding: 18px 28px;
+
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  align-items: center;
+
+  color: #ffffff;
+}
