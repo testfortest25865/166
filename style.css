@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Muller';
+  src: url("fonts/MullerRegular.ttf");
+}
+@font-face {
+  font-family: 'Muller-bold';
+  src: url("fonts/MullerBold.ttf");
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url("fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("fonts/Ubuntu-R.ttf");
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url("fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url("fonts/Roboto-Regular.ttf");
+}
 /* Указываем box sizing */
 *,
 *::before,
@@ -57,7 +81,7 @@ img {
   background: #fec52e;
   border: 1px solid #ffc700;
   border-radius: 9px;
-  padding: 17px 25px;
+  padding: 8px 25px;
 }
 
 .tel a {
@@ -121,21 +145,16 @@ img {
   font-family: "Muller";
   font-style: normal;
   font-weight: 250;
-  font-size: 57px;
-  line-height: 64px;
-  display: flex;
-  align-items: center;
+  font-size: 50px;
+  line-height: 56px;
 
   color: #000000;
 }
 
 .header__body h2 span {
-  font-family: "Muller";
-  font-style: normal;
+  font-family: "Muller-bold";
   font-weight: 500;
-  font-size: 57px;
   line-height: 112%;
-  align-items: center;
 
   color: #000000;
 }
@@ -155,6 +174,14 @@ img {
 }
 
 .header__body a {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+
+  color: #000000;
+
   display: inline-block;
   background: #ffbe00;
   border: 1px solid #ffc700;
@@ -162,13 +189,667 @@ img {
   border-radius: 7px;
   margin-top: 31px;
   padding: 18px 28px;
+}
+
+/* advantages */
+
+.advantages {
+  position: relative;
+  padding: 50px 0;
+}
+
+.left__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -5;
+}
+
+.advantages h3 {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  text-align: center;
+
+  color: #1e212c;
+  margin-bottom: 34px;
+}
+
+.advantages__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.advantages__card {
+  background: #fff;
+  box-shadow: 0px 4px 32px rgba(34, 34, 34, 0.24);
+
+  border-radius: 17px;
+  padding: 20px 0;
+}
+
+.advantages__card p {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 130%;
+  text-align: center;
+  color: #000000;
+}
+
+.advantages__card img {
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+/* price2 */
+
+.price2 {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.right__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -99;
+}
+
+.price2 h3 {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #000000;
+}
+
+.price2 h3 span {
+  color: #ffbe00;
+}
+
+.price2__p {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 31px;
+
+  color: #000000;
+}
+
+.price2__p::after {
+  content: "";
+  display: block;
+  width: 68px;
+  height: 7px;
+  color: #ffc700;
+  margin: 0 auto;
+}
+
+.container__price2 {
+  gap: 25px;
+}
+
+.card_price2 {
+  max-width: 346px;
+  width: 100%;
+
+  box-shadow: 0px 4px 32px rgba(34, 34, 34, 0.24);
+  border-radius: 25px;
+
+  margin-top: 40px;
+}
+
+.card_price2 img {
+  margin: 10px auto;
+  border-bottom: 1px solid #000;
+}
+
+.price2__text {
+  padding: 25px;
+}
+
+.price2__text h5 {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 99.5%;
+
+  color: #000000;
+}
+
+.price2__text p {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  text-align: left;
+  margin-top: 15px;
+
+  color: #000000;
+}
+
+.price2__text h6 {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  margin-top: 15px;
+
+  color: #000000;
+}
+
+.price2__text a {
+  display: block;
+  background: #ffbe00;
+  border: 1px solid #ffc700;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  margin-top: 36px;
+  padding: 18px 52px;
 
   font-family: "Muller";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
+  text-align: center;
+
+  color: #000000;
+}
+
+/* work  */
+
+.reliable-hands {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.reliable-hands h3 {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.reliable-hands h3 span {
+  color: #ffbe00;
+}
+
+.reliable-hands h4 {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 14px;
+
+  color: #000000;
+}
+
+.carousel-item {
+  margin-top: 50px;
+}
+
+.left__inner h5 {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 131%;
+
+  color: #000;
+}
+
+.left__inner h5 span {
+  color: #ffbe00;
+}
+
+.p__left {
+  margin-top: 18px;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 124%;
+  padding: 15px;
+  background: rgba(217, 217, 217, 0.28);
+  border-radius: 16px;
+
+  color: #000000;
+}
+
+.cards__inner {
+  margin-top: 17px;
+}
+
+.card__inner {
+  max-width: 100px;
+  width: 100%;
+}
+
+.card__inner img {
+  margin: 0 auto;
+}
+
+.card__inner p {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 124%;
+  text-align: center;
+  margin-top: 4px;
+
+  color: #000000;
+}
+
+.left__inner {
+  display: inline-block;
+  margin-left: 50px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.right__inner {
+  display: inline-block;
+}
+
+.container__hands {
+  position: relative;
+}
+
+.carousel-control-prev {
+  position: absolute;
+  top: 50%;
+  left: -50px;
+
+  background: #ffc700;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+}
+
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  right: -50px;
+
+  background: #ffc700;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+}
+
+/* form  */
+
+.form {
+  min-height: 850px;
+  background-image: url(img/form_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  position: relative;
+}
+
+.form__car {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.form h2 {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  display: flex;
   align-items: center;
 
+  color: #000000;
+}
+
+.form h2 span {
+  color: #ff0000;
+}
+
+.text_form {
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+
+.text_form p {
+  margin-left: 15px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #000000;
+}
+
+.forma {
+  max-width: 508px;
+  width: 100%;
+  margin-top: 26px;
+  background: #ffffff;
+  border-radius: 29px;
+  padding: 45px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.forma input,
+.form button {
+  max-width: 445px;
+  width: 100%;
+}
+
+.forma h5 {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #000000;
+  text-align: center;
+}
+
+.form input,
+.form button {
+  margin-top: 30px;
+}
+
+.form input {
+  background: #ebebeb;
+  border: 3px solid #ffc700;
+  border-radius: 15px;
+  padding: 15px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #8c8c8c;
+}
+
+.form button {
+  background: #deb00b;
+  border-radius: 20px;
+
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
   color: #ffffff;
+  padding: 20px;
+}
+
+/* work */
+
+.we-work {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.we-work h4 {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
+  text-align: center;
+
+  color: #323232;
+}
+
+.container__work {
+  gap: 20px;
+}
+
+.card__work {
+  margin-top: 20px;
+  max-width: 250px;
+  width: 100%;
+  text-align: center;
+}
+
+.card__work img {
+  margin: 0 auto;
+}
+
+.card__work h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+  margin-top: 15px;
+
+  color: #323232;
+}
+
+.card__work p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  margin-top: 7px;
+
+  color: #323232;
+}
+
+/* отзывы */
+
+.feed_back {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.feed_back h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  text-align: center;
+
+  color: #171616;
+
+  margin-bottom: 30px;
+}
+
+.feed__cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px;
+}
+
+.feed__card {
+  max-width: 520px;
+  width: 100%;
+}
+
+.video_feed iframe {
+  border-radius: 20px;
+}
+
+.feed__card h5 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #171616;
+  margin-top: 17px;
+}
+
+.feed__card h5 span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  color: #ff0000;
+}
+
+.feed__card p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #171616;
+  margin-top: 5px;
+}
+
+/* footer */
+
+.footer {
+  background: #000;
+}
+
+.footer__container {
+  display: grid;
+  padding: 0;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+}
+
+.left__footer {
+  margin-left: 30%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 170px;
+  width: 100%;
+}
+
+.footer__tel {
+  background: #fec52e;
+  border: 1px solid #ffc700;
+  border-radius: 9px;
+  padding: 0 24px;
+}
+
+.footer__tel a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+
+  color: #000000;
+  margin-left: 14px;
+}
+
+.social {
+  margin-top: 25px;
+}
+
+.center__one {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 20%;
+  position: relative;
+}
+
+.center__one::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 250px;
+  color: #fff;
+  position: absolute;
+  z-index: 2;
+}
+
+.center__one ul li {
+  list-style: none;
+}
+
+.center__one ul li a {
+  display: inline-block;
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  margin-top: 31px;
+
+  color: #ffffff;
+}
+
+.center__two {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.two__top a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #ffffff;
+  padding: 10px;
+}
+
+.two__top a:hover {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+
+.uzb {
+  position: relative;
+}
+
+.uzb::before {
+  content: "";
+  display: block;
+  height: 21px;
+  width: 2px;
+  color: #fff;
+  position: absolute;
 }
