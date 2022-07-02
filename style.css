@@ -1,25 +1,25 @@
 @font-face {
-  font-family: 'Muller';
+  font-family: "Muller";
   src: url("fonts/MullerRegular.ttf");
 }
 @font-face {
-  font-family: 'Muller-bold';
+  font-family: "Muller-bold";
   src: url("fonts/MullerBold.ttf");
 }
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url("fonts/Montserrat-Regular.ttf");
 }
 @font-face {
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
   src: url("fonts/Ubuntu-R.ttf");
 }
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   src: url("fonts/Poppins-Regular.ttf");
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   src: url("fonts/Roboto-Regular.ttf");
 }
 /* Указываем box sizing */
@@ -69,7 +69,7 @@ img {
 
 .header {
   background-image: url(img/header_bg.png);
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 60px;
@@ -94,10 +94,6 @@ img {
   margin-left: 10px;
 }
 
-.tel a:hover {
-  text-decoration: none;
-}
-
 .header__nav__ul li:first-child {
   margin-left: 70px;
 }
@@ -111,10 +107,6 @@ img {
   font-size: 20px;
   line-height: 20px;
   color: #000000;
-}
-
-.header__nav__ul li a:hover {
-  text-decoration: none;
 }
 
 .header__body h1 {
@@ -188,7 +180,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 7px;
   margin-top: 31px;
-  padding: 18px 28px;
+  padding: 18px 28px 16px 28px;
 }
 
 /* advantages */
@@ -292,8 +284,10 @@ img {
   display: block;
   width: 68px;
   height: 7px;
-  color: #ffc700;
+  background-color: #ffc700;
   margin: 0 auto;
+  margin-top: 31px;
+  border-radius: 3.5px;
 }
 
 .container__price2 {
@@ -406,6 +400,17 @@ img {
   color: #000000;
 }
 
+.reliable-hands h4::after {
+  content: "";
+  display: block;
+  width: 68px;
+  height: 7px;
+  background-color: #ffc700;
+  margin: 0 auto;
+  margin-top: 31px;
+  border-radius: 3.5px;
+}
+
 .carousel-item {
   margin-top: 50px;
 }
@@ -445,10 +450,6 @@ img {
 .card__inner {
   max-width: 100px;
   width: 100%;
-}
-
-.card__inner img {
-  margin: 0 auto;
 }
 
 .card__inner p {
@@ -516,6 +517,8 @@ img {
   position: absolute;
   right: 0;
   bottom: 0;
+  width: 100%;
+  max-width: 690px;
 }
 
 .form h2 {
@@ -524,8 +527,6 @@ img {
   font-weight: 700;
   font-size: 48px;
   line-height: 48px;
-  display: flex;
-  align-items: center;
 
   color: #000000;
 }
@@ -616,6 +617,14 @@ img {
 .we-work {
   padding-top: 50px;
   padding-bottom: 50px;
+  position: relative;
+}
+
+.work__right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .we-work h4 {
@@ -791,7 +800,7 @@ img {
   display: block;
   width: 2px;
   height: 250px;
-  color: #fff;
+  background-color: #fff;
   position: absolute;
   z-index: 2;
 }
@@ -827,7 +836,6 @@ img {
   line-height: 22px;
 
   color: #ffffff;
-  padding: 10px;
 }
 
 .two__top a:hover {
@@ -842,7 +850,7 @@ img {
 }
 
 .uzb {
-  position: relative;
+  display: flex;
 }
 
 .uzb::before {
@@ -850,6 +858,470 @@ img {
   display: block;
   height: 21px;
   width: 2px;
-  color: #fff;
-  position: absolute;
+  background-color: #fff;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* благодарность */
+
+.top_footer_t li {
+  list-style: none;
+  text-align: center;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 22px;
+  margin-top: 20px;
+}
+
+.nav_li_footer{
+  margin-bottom: 20px;
+}
+
+.nav_li_footer a{
+  color: #000;
+}
+
+.nav_li_footer a:hover{
+  color: #000;
+}
+
+.tel__blag{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tel__blag a:hover{
+  color: #000;
+}
+
+@media (max-width: 1367px) {
+  .header {
+    background-position: center;
+  }
+
+  .header__body h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .header__body h1 span {
+    font-size: 56px;
+    line-height: 60px;
+  }
+
+  .header__body h2 {
+    font-size: 46px;
+    line-height: 48px;
+    color: #000000;
+  }
+
+  .header__body h2 span {
+    font-size: 42px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .form__car {
+    width: 50%;
+  }
+
+  .right__inner {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    background-position: center;
+  }
+
+  .container__price2 {
+    justify-content: center !important;
+  }
+
+  .form__car {
+    width: 40%;
+  }
+
+  .feed__cards {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .right__footer iframe {
+    width: 100vw;
+    order: 1;
+  }
+
+  .left__footer {
+    order: 2;
+  }
+
+  .center__one {
+    order: 3;
+  }
+
+  .center__two {
+    order: 4;
+  }
+
+  .left__footer {
+    margin-left: 15%;
+  }
+
+  .center__one {
+    margin-left: 15%;
+  }
+
+  .center__two {
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    background-position: 20%;
+  }
+
+  .advantages__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .advantages__card {
+    max-width: 210px;
+    width: 100%;
+  }
+
+  .right__inner {
+    display: none;
+  }
+
+  .form__car {
+    display: none;
+  }
+
+  .left__footer,
+  .center__one,
+  .center__two {
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 866px) {
+  /* бургер */
+
+  .mobile_burger {
+    display: block !important;
+  }
+
+  label .menu {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    z-index: 100;
+    width: 30px;
+    height: 30px;
+    background: #efefef;
+    border-radius: 50% 50% 50% 50%;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 0 0 #efefef, 0 0 0 0 #efefef;
+    cursor: pointer;
+  }
+
+  label .hamburger {
+    position: absolute;
+    top: 60px;
+    right: 25px;
+    width: 30px;
+    height: 2px;
+    background: #fec52e;
+    display: block;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+
+  label .hamburger:after,
+  label .hamburger:before {
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #fec52e;
+  }
+
+  label .hamburger:before {
+    top: -10px;
+  }
+
+  label .hamburger:after {
+    bottom: -10px;
+  }
+
+  label input {
+    display: none;
+  }
+
+  label input:checked + .menu {
+    box-shadow: 0 0 0 100vw #efefef, 0 0 0 100vh #efefef;
+    border-radius: 0;
+  }
+
+  label input:checked + .menu .hamburger {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  label input:checked + .menu .hamburger:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    bottom: 0;
+  }
+
+  label input:checked + .menu .hamburger:before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 0;
+  }
+
+  label input:checked + .menu + ul {
+    opacity: 1;
+  }
+
+  label ul {
+    list-style: none;
+    z-index: 200;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    -webkit-transition: 0.25s 0s ease-in-out;
+    transition: 0.25s 0s ease-in-out;
+    padding: 0;
+    text-align: center;
+  }
+
+  label a {
+    margin-bottom: 1em;
+    display: block;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .nav_li a {
+    font-family: "Muller";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+  }
+
+  .ul_m {
+    height: 100vh;
+  }
+
+  .phone_m_link {
+    background: #fec52e;
+    border-radius: 25px 0px;
+
+    font-family: "Montserrat 500";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 14px 20px;
+
+    color: #ffffff;
+  }
+
+  .phone_m_link:hover {
+    color: #fff;
+  }
+
+  .header__uzb a {
+    color: #000;
+  }
+
+  .uzb__header:before {
+    background-color: #000;
+  }
+
+  /* header  */
+
+  .header__nav__ul {
+    display: none !important;
+  }
+
+  .header {
+    padding-left: 20px;
+    background-position: 10%;
+  }
+
+  .left__bg,
+  .right__bg,
+  .work__right {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .header__body h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .header__body h1 span {
+    font-size: 48px;
+    line-height: 50px;
+  }
+
+  .header__body h2 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+
+  .header__body h2 span {
+    font-size: 36px;
+    line-height: 38px;
+  }
+
+  .header__body p {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .advantages h3,
+  .price2 h3,
+  .reliable-hands h3,
+  .form h2,
+  .we-work h4,
+  .feed_back h4 {
+    font-size: 38px;
+    line-height: 130%;
+  }
+
+  .advantages__card p,
+  .price2__p,
+  .price2__text h5,
+  .reliable-hands h4,
+  .text_form p {
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+
+  .forma {
+    max-width: 350px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .form input {
+    padding: 10px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .form button {
+    font-size: 18px;
+    line-height: 20px;
+    padding: 10px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left__footer,
+  .center__one,
+  .center__two {
+    margin-left: 0;
+  }
+
+  .center__one,
+  .center__two {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__body h1 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .header__body h1 span {
+    font-size: 44px;
+    line-height: 40px;
+  }
+
+  .header__body h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .header__body h2 span {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .header__body p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .advantages h3,
+  .price2 h3,
+  .reliable-hands h3,
+  .form h2,
+  .we-work h4,
+  .feed_back h4 {
+    font-size: 32px;
+    line-height: 130%;
+  }
+
+  .advantages__card p,
+  .price2__p,
+  .price2__text h5,
+  .reliable-hands h4,
+  .text_form p {
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  .left__inner {
+    margin-left: 0px;
+  }
+
+  .card_price2 img {
+    width: 80%;
+  }
 }
