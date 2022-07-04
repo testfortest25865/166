@@ -1067,7 +1067,7 @@ img {
   label .menu {
     position: absolute;
     right: 0px;
-    top: 20px;
+    top: 35px;
     z-index: 100;
     width: 30px;
     height: 30px;
@@ -1075,13 +1075,12 @@ img {
     border-radius: 50% 50% 50% 50%;
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
-    box-shadow: 0 0 0 0 #efefef, 0 0 0 0 #efefef;
     cursor: pointer;
   }
 
   label .hamburger {
     position: absolute;
-    top: 60px;
+    top: 35px;
     right: 25px;
     width: 30px;
     height: 2px;
@@ -1147,7 +1146,7 @@ img {
     list-style: none;
     z-index: 200;
     position: absolute;
-    top: 65%;
+    top: 60%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -1172,6 +1171,11 @@ img {
     font-size: 18px;
     line-height: 20px;
     color: #000000;
+  }
+
+  .nav_li a:hover{
+    color: #ffc700;
+    text-decoration: none;
   }
 
   .ul_m {
@@ -1200,6 +1204,10 @@ img {
     color: #000;
   }
 
+  .header__uzb a:hover{
+    color: #ffc700;
+  }
+
   .uzb__header:before {
     background-color: #000;
   }
@@ -1211,8 +1219,9 @@ img {
   }
 
   .header {
-    padding-left: 20px;
+    padding-left: 0px;
     background-position: 10%;
+    padding-top: 35px;
   }
 
   .left__bg,
@@ -1313,6 +1322,7 @@ img {
   .header__body h1 {
     font-size: 28px;
     line-height: 32px;
+    margin-top: 100px;
   }
 
   .header__body h1 span {
